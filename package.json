@@ -1,0 +1,19 @@
+{
+  "name": "pdf2csv",
+  "version": "0.1.0",
+  "description": "Converter from PDF to CSV.",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "dev:watch": "ts-node-dev --respawn src/index.ts"
+  },
+  "repository": "git@github.com:mfreeman59/pdf2csv.git",
+  "author": "Kengo,MATSUDA <k.matsuda622@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.7.10",
+    "ts-node": "^10.2.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.2"
+  }
+}
