@@ -3,20 +3,26 @@
   "version": "0.1.0",
   "description": "Converter from PDF to CSV.",
   "main": "src/index.ts",
+  "type": "module",
   "scripts": {
-    "dev": "ts-node src/index.ts",
-    "dev:watch": "ts-node-dev --respawn src/index.ts"
+    "dev": "node --loader ts-node/esm",
+    "lint": "eslint --ext .ts ./"
   },
   "repository": "git@github.com:mfreeman59/pdf2csv.git",
   "author": "Kengo,MATSUDA <k.matsuda622@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^16.7.10",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
     "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-airbnb-typescript": "^14.0.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.1.0",
     "prettier": "^2.3.2",
     "ts-node": "^10.2.1",
     "ts-node-dev": "^1.1.8",
